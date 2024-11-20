@@ -90,7 +90,6 @@ return {
                         {'nvim-cmp'}
                      },
       opts = {
-          --lsp = {},
           mappings = true,
       }
   }
