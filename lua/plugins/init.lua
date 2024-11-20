@@ -17,14 +17,6 @@ return {
   'mbbill/undotree',
 
   {
-      'Julian/lean.nvim',
-      dependencies = {
-                        {'neovim/nvim-lspconfig'},
-                        {'nvim-lua/plenary.nvim'}
-                     }
-  },
-
-  {
       'neovim/nvim-lspconfig',
   },
 
@@ -88,7 +80,19 @@ return {
             end,
         })
     end,
-  }
+  },
 
+  {
+      'Julian/lean.nvim',
+      dependencies = {
+                        {'neovim/nvim-lspconfig'},
+                        {'nvim-lua/plenary.nvim'},
+                        {'nvim-cmp'}
+                     },
+      opts = {
+          --lsp = {},
+          mappings = true,
+      }
+  }
 
 }
