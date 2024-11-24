@@ -16,6 +16,8 @@ return {
 
   'mbbill/undotree',
 
+  'lewis6991/gitsigns.nvim',
+
   {
       'neovim/nvim-lspconfig',
   },
