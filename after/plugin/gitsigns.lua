@@ -1,4 +1,4 @@
-require('gitsigns').setup {
+require('gitsigns').setup({
   signs = {
     add          = { text = '┃' },
     change       = { text = '┃' },
@@ -47,4 +47,5 @@ require('gitsigns').setup {
     row = 0,
     col = 1
   },
-}
+})
+vim.cmd "set statusline+=%{get(b:,'gitsigns_status','')}"
