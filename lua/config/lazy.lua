@@ -54,4 +54,9 @@ vim.opt.colorcolumn = "80"
 
 vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
 
-return require('lazy').setup('plugins')
+return require('lazy').setup({
+    spec = {
+        { import = 'plugins' },
+    },
+    checked = { enabled = true},
+})
