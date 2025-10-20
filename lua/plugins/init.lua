@@ -10,6 +10,11 @@ return {
     'neovim/nvim-lspconfig',
 
     {
+        'L3MON4D3/LuaSnip',
+        build = "make install_jsregexp"
+    },
+
+    {
         'hrsh7th/nvim-cmp',
         dependencies =  {
                             'hrsh7th/cmp-nvim-lsp',
@@ -53,7 +58,7 @@ return {
         },
         dependencies = {
             {'mason-org/mason.nvim', opts = {} },
-            'neovim/nvim-lspconfig',
+            --'neovim/nvim-lspconfig',
         },
     },
 
@@ -63,17 +68,5 @@ return {
                             'nvim-lua/plenary.nvim',
                         }
     },
-
-    {
-        'Julian/lean.nvim',
-        dependencies =  {
-                            'neovim/nvim-lspconfig',
-                            'nvim-lua/plenary.nvim',
-                            'nvim-cmp'
-                        },
-        opts =  {
-                    mappings = true,
-                }
-    }
 
 }
